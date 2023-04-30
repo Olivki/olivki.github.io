@@ -12,7 +12,7 @@ The below steps should be done *_in order_*, as they rely on the previous steps.
 .. Run the `MelonLoader` exe and select the `{InstallDirectory}/client/ArcheLand.exe` as the target Unity game.
 .. Deselect `Latest` and select `v0.5.7`, leave `Game Arch` as is. It _should_ default to `x64`.
 .. It should now look something like this: +
-image:./melon_loader.png[Melon Loader Example] +
+image:melon_loader.png[Melon Loader Example] +
  _(Where `C:\Archeland\client\Archeland.exe` should instead be *your* `{InstallDirectory}/client/ArcheLand.exe` path)_
 .. Click the `INSTALL` button.
 . Download link:https://github.com/bbepis/XUnity.AutoTranslator/[XUnity.AutoTranslator] plugin for MelonMod from link:https://github.com/bbepis/XUnity.AutoTranslator/releases/download/v5.2.0/XUnity.AutoTranslator-MelonMod-5.2.0.zip[here].
@@ -21,7 +21,7 @@ image:./melon_loader.png[Melon Loader Example] +
 .. Extract the contents of `AutoTranslator.zip` to your `{GameInstall}/client/` directory, overwriting files if needed.
 . If everything is installed correctly, when launching Archeland _two_ windows should be opened up, the game window, and a console window.
 .. Check in the console window that the `XUnity.AutoTranslator` mod was properly installed, it should look something like this: +
-image:./melon_loader_console.png[Melon Loader Console].
+image:melon_loader_console.png[Melon Loader Console].
 .. If either of the above steps is false, reread the previous steps and check if you've missed something.
 .. Note that the auto translator is not instant and will take a bit to translate the Korean text, and some lines may not get translated, but the vast majority should get translated.
 .. If you wish to hide the MelonLoader console window, you can launch the application with the `--melonloader.hideconsole` parameter.
