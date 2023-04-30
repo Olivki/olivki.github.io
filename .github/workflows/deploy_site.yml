@@ -8,7 +8,10 @@ permissions: write-all
 jobs:
   adoc_build:
     runs-on: ubuntu-latest
-    name: Build AsciiDoc
+    name: Deploy AsciiDoc
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
@@ -19,7 +22,12 @@ jobs:
           program: "asciidoctor -R docs -D build --backend=html5 '**/*.adoc'"
     - name: Copy images
       run: sudo cp -a ./docs/images/ ./build/
-    - name: Deploy to gh-pages
-      uses: JamesIves/github-pages-deploy-action@v4
+    - name: Setup Pages
+      uses: actions/configure-pages@v3
+    - name: Upload Artifact
+      uses: actions/upload-pages-artifact@v1
       with:
-        folder: ./build
+        path: './build'
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v2
