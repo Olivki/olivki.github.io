@@ -1,5 +1,7 @@
 ## Archeland Installation (English Patch)
 
+:imagesdir: ../images
+
 _Based on the link:https://www.prydwen.gg/archeland/guides/english-patch[Prydwen guide], and the guide for alternative translation patching from the link:https://discord.com/channels/993365569162203186/1049902527774203986/1095457975063302335[Archeland discord]._
 
 The below steps should be done *_in order_*, as they rely on the previous steps.
