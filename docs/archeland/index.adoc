@@ -15,7 +15,7 @@ The below steps should be done *_in order_*, as they rely on the previous steps.
 image:melon_loader.png[Melon Loader Example] +
  _(Where `C:\Archeland\client\Archeland.exe` should instead be *your* `{InstallDirectory}/client/ArcheLand.exe` path)_
 .. Click the `INSTALL` button.
-. Download link:https://github.com/bbepis/XUnity.AutoTranslator/[XUnity.AutoTranslator] plugin for MelonMod from link:https://github.com/bbepis/XUnity.AutoTranslator/releases/download/v5.2.0/XUnity.AutoTranslator-MelonMod-5.2.0.zip[here].
+. Download link:https://github.com/bbepis/XUnity.AutoTranslator/[XUnity.AutoTranslator] plugin for Melon Loader from link:https://github.com/bbepis/XUnity.AutoTranslator/releases/download/v5.2.0/XUnity.AutoTranslator-MelonMod-5.2.0.zip[here].
 .. Extract the contents of the `XUnity.AutoTranslator-MelonMod.zip` _(the file you downloaded in the previous step)_ to your `{InstallDirectory}/client` directory, overwriting files if needed.
 . Download an already setup `AutoTranslator` directory from link:https://cdn.discordapp.com/attachments/145963699343982593/1102245088685469727/AutoTranslator.zip[here].
 .. Extract the contents of `AutoTranslator.zip` to your `{GameInstall}/client/` directory, overwriting files if needed.
