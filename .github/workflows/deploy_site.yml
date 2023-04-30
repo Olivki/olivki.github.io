@@ -9,7 +9,7 @@ permissions:
 jobs:
   adoc_build:
     runs-on: ubuntu-latest
-    name: asciidoctor -D docs --backend=html5 -o index.html -a toc2 docs/index.adoc 
+    name: Build AsciiDoc
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
@@ -17,8 +17,8 @@ jobs:
       id: adocbuild
       uses: tonynv/asciidoctor-action@v2
       with:
-          program: "asciidoctor -D docs --backend=html5 -o index.html docs/index.adoc"
+          program: "asciidoctor -D ./build --backend=html5 -o index.html 'docs/**/*.adoc'"
     - name: Deploy to gh-pages
       uses: JamesIves/github-pages-deploy-action@v4
       with:
-        folder: ./docs
+        folder: ./build
