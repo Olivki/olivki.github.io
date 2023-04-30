@@ -1,0 +1,24 @@
+name: Build AsciiDocs
+
+on:
+  push:
+    branches:
+    - main
+jobs:
+  adoc_build:
+    runs-on: ubuntu-latest
+    name: asciidoctor -D docs --backend=html5 -o index.html -a toc2 docs/index.adoc 
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Get build container
+      id: adocbuild
+      uses: tonynv/asciidoctor-action@v2
+      with:
+          program: "asciidoctor -D docs --backend=html5 -o index.html docs/index.adoc"
+    - name: Deploy to gh-pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        publish_branch: gh-pages
+        publish_dir: ./docs
