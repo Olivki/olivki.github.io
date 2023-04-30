@@ -17,7 +17,7 @@ jobs:
       id: adocbuild
       uses: tonynv/asciidoctor-action@v2
       with:
-          program: "asciidoctor -D ./build --backend=html5 -o index.html 'docs/**/*.adoc'"
+          program: "asciidoctor -R docs -D build --backend=html5 '**/*.adoc'"
     - name: Deploy to gh-pages
       uses: JamesIves/github-pages-deploy-action@v4
       with:
