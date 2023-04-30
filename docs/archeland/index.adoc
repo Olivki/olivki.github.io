@@ -4,6 +4,8 @@
 
 _Based on the link:https://www.prydwen.gg/archeland/guides/english-patch[Prydwen guide], and the guide for alternative translation patching from the link:https://discord.com/channels/993365569162203186/1049902527774203986/1095457975063302335[Archeland discord]._
 
+Join the Archeland discord link:https://discord.gg/archeland-zlongame-993365569162203186[here], manually fixed translations can be found in the link:https://discord.com/channels/993365569162203186/1049902527774203986[#translations] channel.
+
 The below steps should be done *_in order_*, as they rely on the previous steps.
 
 . Download the Archeland launcher from link:https://kru2update.zlongame.co.kr/KRU2/Clientdown/Archeland_Setup.exe[here]. This will download the actual game. Note that the GB shown is *NOT* the size of the game, but the size available in the currently selected hard drive, the actual game is around 10-12 GB in size.
