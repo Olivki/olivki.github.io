@@ -18,6 +18,8 @@ jobs:
       uses: tonynv/asciidoctor-action@v2
       with:
           program: "asciidoctor -R docs -D build --backend=html5 '**/*.adoc'"
+    - name: Thing
+      run: echo ls /build
     - name: Deploy to gh-pages
       uses: JamesIves/github-pages-deploy-action@v4
       with:
